@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <form action="">
+        <label id="name-label" for="name">Name</label>
+        <br>
+        <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+        <br><br>
+        <label id="email-label" for="email">Email</label>
+        <br>
+        <input type="email" name="email" id="email" placeholder="test@gmail.com" required>
+        <br><br>
+        <label id="number-label" for="number">Roll No</label>
+        <br>
+        <input type="number" name="number" id="number" placeholder="roll" min="0" max="100" required>
+        <br><br>
+        <label for="drop-down">How do you rate our courses?</label>
+        <br>
+        <select name="drop-down" id="drop-down">
+            <option value="Excellent">Excellent</option>
+            <option value="Good">Good</option>
+            <option value="Fair">Fair</option>
+            <option value="Poor">Poor</option>
+        </select>
+        <br><br>
+        <label for="">Your Favorite Topic in HTML</label>
+        <br>
+        <input type="checkbox" name="topic1" value="Structuralelements"> Structural Elements <br>
+        <input type="checkbox" name="topic2" value="LinkandList"> Link and List <br>
+        <input type="checkbox" name="topic3" value="media"> HTML Media <br>
+        <input type="checkbox" name="topic4" value="tables"> HTML Table <br>
+        <input type="checkbox" name="topic5" value="groupelements"> Grouping Elements <br>
+        <input type="checkbox" name="topic6" value="forms"> Forms 
+        <br><br>
+        <label for="">Do you like the HTML course?</label>
+        <br>
+        <input type="radio" name="course" value="yes">Yes
+        <input type="radio" name="course" value="no">No
+        <br><br>
+        <label for="">Few words about course</label>
+        <br>
+        <textarea name="Description" id="Description" cols="50" rows="5"></textarea>
+        <br><br>
+        <button type="button" onclick="alert('server validating')">Submit</button>
+    </form>
+</body>
+</html>
