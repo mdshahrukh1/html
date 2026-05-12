@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists nad Tags in html</title>
+</head>
+
+<!-- HTML is not Case sensitive, which means that the tags can be written in uppercase, lowercase, or mixed case. -->
+ 
+<body>
+    <h1>Lists in HTML</h1>
+
+    <ul><!-- Unordered List -->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <ol type="A"><!-- Ordered List -->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    
+    <ol type="i">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+
+    <!-- Attributes are used to add more infomation to the tag. 
+    For example, in the above code, we have used the type attribute to specify the type of list.
+    The type attribute can take the following values: -->
+    <!-- 1. A: Uppercase letters (A, B, C, etc.)
+         2. a: Lowercase letters (a, b, c, etc.)
+         3. I: Uppercase Roman numerals (I, II, III, etc.)
+         4. i: Lowercase Roman numerals (i, ii, iii, etc.)
+         5. 1: Numbers (1, 2, 3, etc.) - This is the default value for ordered lists. -->
+
+    <h1>Tags In HTML</h1>
+    <!-- Anchor element is used to add links to the webpage.
+    The href attribute is used to specify the URL of the page the link goes to. 
+    href means "hypertext reference" -->
+
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.netflix.com/in/">Netflix</a>
+
+    <!-- absolute URL: https://www.google.com and 
+    relative URL: /about.html  relative links are used to build internal links within a website -->
+
+
+    <!-- Image element is used to add images to the webpage. -->
+     <img src="image.png" alt="Image Description" height="200px" width="200px"><br><hr>
+
+     <!-- src means "source" and alt means "alternative text". 
+    The alt attribute is used to provide a text description of
+    the image for accessibility purposes and in case the image cannot be displayed. -->
+
+    <!-- Create an unordered list of 3 fruits: Apple, Banana, and Orange that also shows links to their pictures. -->
+    <ul>
+        <li><a href="apple.html">Apple</a></li>
+        <li><a href="banana.html">Banana</a></li>
+        <li><a href="orange.html">Orange</a></li>
+    </ul>
+
+    <!-- Br tag is use to add a line break in the webpage. 
+    It is an empty tag, which means it does not have a closing tag. 
+
+    This is a comments  this is part of codethat should not be parsed-->
+
+    <p>Twinkle Twinkle Little Star how i wonder what you are!</p>
+
+    <p><b>Twinkle Twinkle</b> <br><i>Little Star</i> <br> <u>how i wonder</u> <br> what you are!</p>
+    
+    <b>Bold Text</b>
+    <i>Italic Text</i>
+    <u>Underlined Text</u>
+</body>
+
+</html>

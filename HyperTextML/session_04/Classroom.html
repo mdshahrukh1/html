@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table in HTML</title>
+</head>
+
+<body>
+    <!-- Table - Tables are used to represent real life table data. -->
+    <!-- Row - A row is a horizontal group of cells in a table. It is used to organize data in a structured manner. Each row typically represents a single record or entry in the table.
+    Column - A column is a vertical group of cells in a table. It is used to categorize and organize data based on specific attributes or fields. Each column typically represents a specific type of information, such as name, age, or address. -->
+
+    <table border="1 black">
+        <caption>Classroom Information</caption>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>30</td>
+            <td>New York</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>25</td>
+            <td>Los Angeles</td>
+        </tr>
+        <tr>
+            <td>Michael Johnson</td>
+            <td>35</td>
+            <td>Chicago</td>
+        </tr>
+    </table>
+
+    <!-- tr tag is used to define a row in the table, 
+    while td tag is used to define a cell in the table. 
+    The th tag is used to define a header cell in the table, 
+    which is typically displayed in bold and centered by default. 
+    The border attribute is used to specify the width of the border around the table. 
+    In this example, we have set it to 1, which means there will be a thin border around the table. 
+    The caption tag is used to provide a title or description for the table, 
+    which is displayed above the table by default. -->
+
+    <!-- td tag is used to define a cell in the table, and it is typically used to contain data or information. 
+    Each td element represents a single cell in the table, and it can contain text, images, or other HTML elements. 
+    The content within a td element is displayed as part of the table's data. 
+    In the example provided, each td element contains the name, age, and city of a person in the classroom information table. -->
+
+    <!-- th tag is used to define a header cell in the table, which is typically displayed in bold and centered by default.
+    The th element is used to provide a heading or title for a column or row in the table. 
+    It helps to identify the type of data that is being presented in that particular column or row. 
+    In the example provided, the th elements are used to define the headers for the Name, Age, and City columns in the classroom information table. -->
+
+    <!-- <thead></thead> is used to wrap table header
+    <tbody></tbody> is used to wrap table body
+    <tfoot></tfoot> is used to wrap table footer -->
+    <br>
+    <hr><br>
+    <table border="1">
+        <caption>Food Menu</caption>
+
+        <!-- Table Header -->
+        <thead>
+            <tr>
+                <th>Dish Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td>Frooti</td>
+                <td>₹20</td>
+            </tr>
+            <tr>
+                <td>Samosa</td>
+                <td>₹30</td>
+            </tr>
+            <tr>
+                <td>Pizza</td>
+                <td>₹100</td>
+            </tr>
+            <tr>
+                <td>Burger</td>
+                <td>₹50</td>
+            </tr>
+            <tr>
+                <td>Ships</td>
+                <td>₹20</td>
+            </tr>
+        </tbody>
+
+        <!-- Table Footer -->
+
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th>₹200</th>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+<!-- Colspan & Rowspan - Colspan and Rowspan are attributes used in HTML tables to specify how many columns or rows a cell should span across. -->
+<!-- These are used to create cells which spans over multiple rows or columns. -->
+ 
+<br>
+    <hr><br>
+    <table border="1">
+        <caption>Food Menu</caption>
+
+        <!-- Table Header -->
+        <thead>
+            <tr>
+                <th rowspan="2">Dish Name</th>
+                <th colspan="2">Price</th>
+            </tr>
+            <tr>
+                <th>INR</th>
+                <th>USD</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td>Frooti</td>
+                <td>₹20</td>
+                <td>0.28</td>
+            </tr>
+            <tr>
+                <td>Samosa</td>
+                <td>₹30</td>
+                <td>0.35</td>
+            </tr>
+            <tr>
+                <td>Pizza</td>
+                <td>₹100</td>
+                <td>0.50</td>
+            </tr>
+            <tr>
+                <td>Burger</td>
+                <td>₹50</td>
+                <td>0.25</td>
+            </tr>
+            <tr>
+                <td>Ships</td>
+                <td>₹20</td>
+                <td>0.15</td>
+            </tr>
+        </tbody>
+
+        <!-- Table Footer -->
+
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th>₹200</th>
+                <td>2.00</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+    <!-- Practice Questions - 07
+    Recreate the following table using HTML: -->
+
+    <br><hr><br>
+    <table border="black">
+        <caption>A test table with merged cells</caption>
+        <tr>
+            <td rowspan="2"></td>
+            <td colspan="2">Average</td>
+            <td rowspan="2">Red Eyes</td>
+        </tr>
+        <tr>
+            <td>Height (m)</td>
+            <td>Weight (kg)</td>
+        </tr>
+        <tr>
+            <td>Males</td>
+            <td>1.9</td>
+            <td>0.003</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>Females</td>
+            <td>1.7</td>
+            <td>0.002</td>
+            <td>43%</td>
+        </tr>
+    </table>
+</body>
+
+</html>

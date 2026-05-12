@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline V/S Block</title>
+</head>
+
+<body>
+    <!-- * Block Elements - Takes up the full- width available and starts on a new line.
+        *Inline Elements - Takes up only as much width as necessary and does not start on a new line. -->
+
+    <!-- Heading Element - Block Element -->
+    <h1>Hello world</h1>
+    <h2>ApC</h2>
+
+    <!-- Paragraph Element - Block Element -->
+    <p>This is a paragraph element.</p>
+    <p>Hello World!</p>
+
+    <!-- Anchor Element - Inline Element -->
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.facebook.com">Facebook</a>
+
+    <!-- Image Element - Inline Element -->
+    <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+    <p>This is a paragraph with an inline image. <img src="https://via.placeholder.com/150" alt="Placeholder Image"></p>
+
+
+    <!-- Div Element - Block Element -> Div is container used to hold other HTML or group elements together-->
+    <div style="background-color: lightgray;">
+        <a href="https://www.google.com">Google</a>
+        <a href="https://www.facebook.com">Facebook</a>
+
+    </div>
+    <a href="https://www.twitter.com">Twitter</a>
+
+
+    <!-- Span Element - Inline Element -> Span is also a generic container used to hold other HTML elements or group elements together / Span is used to group inline-elements in a document. It provides no visual change by itself, but it can be useful when styling with CSS or manipulating with JavaScript. -->
+    <span>
+        <a href="https://www.linkedin.com">LinkedIn</a>
+        <a href="https://www.instagram.com">Instagram</a>
+    </span>
+
+
+    <!-- hr Tag - Block Element -> The <hr> tag defines a thematic break in an HTML page (e.g., a shift of topic). It is used to separate content (or define a change in the content) in an HTML document. The <hr> element is typically displayed as a horizontal rule, and it can be styled with CSS to change its appearance. -->
+    <p>This is a paragraph</p>
+    <p>This paragraph is before hr tag</p>
+    <hr>
+    <p>This paragraph is after hr tag</p>
+    <p>This is the last paragraph in the document.</p>
+
+
+    <!-- Sub and Sup Tags - Inline Element -> The <sub> tag defines subscript text. Subscript text appears half a character below the normal line and is sometimes rendered in a smaller font. The <sup> tag defines superscript text. Superscript text appears half a character above the normal line and is sometimes rendered in a smaller font. -->
+    <h1>a <sup>2</sup></h1>
+    <h2>H <sub>2</sub>O</h2>
+
+    <!-- Practice Exercise - 4
+    Print the following on the screen using h1 heading element. -->
+    <h1>Pythagoras therom says <sub>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></sub></h1>
+    <h1>Formula for glucose: C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></h1>
+
+
+
+    <!-- Semantic Markup - Semantic HTML elements are those that clearly describe their meaning in a human- and machine-readable way. 
+     These elements provide information about the type of content they contain, making it easier for browsers, search engines, 
+     and assistive technologies to understand the structure and purpose of the content.
+    Examples of semantic HTML elements include <header>, <nav>, <main>, <article>, <section>, <aside>, 
+    and <footer>. Using semantic HTML helps improve accessibility, SEO, and overall code readability. -->
+
+    <!-- Semeantic Tags - Block Elements -->
+
+    <!-- <header></header>  is used to define the header of a document or a section. It typically contains introductory content or navigational links. -->
+    <!-- <main></main> is used to define the main content of a document. It should contain content that is unique to the document and not repeated across multiple pages. -->
+    <!-- <footer></footer> is used to define the footer of a document or a section. It typically contains copyright information, links to related documents, or other supplementary information. -->
+    <!-- <nav></nav> is used to define a navigation menu. -->
+    <!-- <article></article> is used to define an independent piece of content that can be distributed or reused. -->
+    <!-- <section></section> is used to define a section of content. It is typically used to group related content together. -->
+    <!-- <aside></aside> is used to define content that is tangentially related to the content around it. It is typically used for sidebars, pull quotes, or other content that is not essential to the main content of the document. -->
+
+
+    <h1> a &lt; b</h1>
+    <p>Apna &nbsp; &nbsp; College</p>
+
+    <!-- HTML Entities - HTML entities are used to represent reserved characters in HTML. 
+    For example, the less than symbol (<) is represented as &lt; and the greater than symbol (>) is represented as &gt;. 
+    The non-breaking space is represented as &nbsp;. -->
+
+    <!-- An HTML entity is piece of text("string") that being with an ampersand (&) and ends with a semicolon (;). 
+    It is used to display reversed characters in HTML(which would otherwise be interpreted as HTML code),
+    and invisible characters such as non-breaking spaces.
+    It can also use in place of chracters that are difficult to type with a standard keyboard.
+    Brower interprets them  & renders correct character on the screen. -->
+
+    <h1> &hearts; &amp; &lt; &gt; &quot;</h1>
+    <h1>this is a &#9733; </h1>
+    <p>a &amp; b</p>
+    <p>a &lt; b</p>
+    <p>a &gt; b</p>
+    <p>&quot; a &quot;  &quot; b &quot;</p>
+
+
+
+    practice exercise - 5
+
+    <h1>This is cloudy &#9729; &amp; it will rain &#9748; today.</h1>
+
+
+    <!-- ***Emmet is a plugin for many popular text editors which greatly improves HTML & CSS workflow. 
+    It allows you to write code faster by using abbreviations that are then expanded into full code snippets.
+    For example, if you type "ul>li*3" and press the Emmet expansion key (usually Tab), it will expand to: -->
+
+    <!-- HTML Standard - HTML standards is a document that tells to the browsers how the browers should interpret the HTML code. 
+    It is developed and maintained by the World Wide Web Consortium (W3C). -->
+</body>
+
+</html>

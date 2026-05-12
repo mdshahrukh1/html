@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML input Elements</title>
+</head>
+
+<body>
+    <!-- Checkbox - A checkbox is a form control that allows users to select one or more options from a list.
+     It is typically represented as a small square box that can be checked or unchecked. 
+     Checkboxes are commonly used in forms to gather user preferences, 
+     such as selecting multiple items from a list or indicating agreement to terms and conditions. 
+     When a checkbox is checked, it indicates that the user has selected that option, 
+     while an unchecked checkbox indicates that the option is not selected. -->
+
+    <!-- <input type="checkbox" name="age" id="age" checked />
+     <label for="age">I agree to the terms and conditions</label> -->
+
+    <!-- The checked attribute is used to specify that a checkbox or radio button should be pre-selected when the page loads. 
+        When the checked attribute is present, the checkbox or radio button will be displayed as selected by default. -->
+
+    <!-- Radio Button - A radio button is a form control that allows users to select only one option from a group of choices. -->
+    <!-- <input type="radio" name="fruit" id="apple" value="apple">
+    <label for="apple">Apple</label> -->
+
+    <!-- dropdown menu - A dropdown menu, also known as a select box, is a form control that allows users to choose one option from a list of options. -->
+
+    <!-- Range Slider - A range slider is a form control that allows users to select a value or a range of values by dragging a handle along a track. 
+    It is commonly used for selecting numerical values, such as volume control, brightness adjustment, 
+    or price range selection. The range slider typically consists of a horizontal track with a handle that can be moved left or right to adjust the value.
+    The selected value(s) can be displayed in real-time as the user interacts with the slider. 
+    Range sliders provide an intuitive and interactive way for users to input values within a specified range. -->
+
+    <!-- Textarea - A textarea is a form control that allows users to input multiple lines of text. -->
+
+    <form action="">
+        <input type="text" placeholder="Enter your name" />
+        <input type="password" placeholder="Enter your password" />
+        <input type="number" placeholder="Enter your age" />
+        <br>
+        <input type="checkbox" id="subscribe" name="subscribe" checked />
+        <label for="subscribe">Subscribe to newsletter</label>
+
+        <br>
+        <input type="checkbox" name="age" id="age" checked />
+        <label for="age">I am 18+</label>
+        <br>
+
+        <input type="time" placeholder="Select time" />
+        <input type="color" placeholder="Select color" />
+
+        <div>
+            <input type="radio" name="fruit" id="apple" value="apple">
+            <label for="apple">Apple</label>
+
+            <input type="radio" name="fruit" id="banana" value="banana">
+            <label for="banana">Banana</label>
+
+            <input type="radio" name="fruit" id="orange" value="orange">
+            <label for="orange">Orange</label>
+        </div>
+
+        <div>
+            Choose your subjects:
+            <input type="checkbox" name="subjects" id="math" value="math"/>
+            <label for="math">Math</label>
+
+            <input type="checkbox" name="subjects" id="science" value="science"/>
+            <label for="science">Science</label>
+
+            <input type="checkbox" name="subjects" id="english" value="english"/>
+            <label for="english">English</label>
+        </div>
+
+        <div>
+            <label for="country">Select your country:</label>
+            <select id="country" name="country">
+                <option value="usa" selected>USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+                <option value="australia">Australia</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="volume">Volume Control:</label>
+            <input type="range" id="volume" name="volume" min="0" max="100" step="10" value="50"/>
+        </div>
+
+        <div>
+            <label for="feedback">Please provide your feedback:</label>
+            <textarea rows="5" cols="20" name="feedback" id="feedback" placeholder="Enter your feedback here..."></textarea>
+            <button type="submit">Submit Feedback</button>
+        </div>
+    </form>
+</body>
+
+</html>

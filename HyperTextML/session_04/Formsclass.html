@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms is HTML</title>
+</head>
+
+<body>
+    <!-- Forms are used to collect data from users.
+    They are an essential part of web development and allow users to interact with websites by submitting information.
+    Forms can include various types of input fields, such as text boxes,
+    checkboxes, radio buttons, dropdown menus, and more. 
+    They are typically used for tasks like user registration, 
+    login, feedback submission, and data collection. 
+    Forms can be styled using CSS to enhance their appearance and improve user experience.
+    Additionally, form data can be processed using server-side scripting 
+    languages like PHP or JavaScript to perform actions based on user input. -->
+
+    <!-- <form action=""></form> -->
+    <!-- The <form> element is used to create an HTML form for user input.
+        The Action attribute is used to define what action needs to be performed when a form is submitted or where the form data should be sent.
+        The method attribute specifies how to send form data (the form-data is sent to the page specified in the action attribute). -->
+
+    <!-- <input type="text"> -->
+    <!-- is used to create multiple form controls in a web page.
+        there are multiple tyoes of inputs that can be created using type attribute of input tag.
+        some of the commonly used input types are text, password, email, number, checkbox, -->
+
+    <!-- <input type="text"/>
+        <input type="password"/>
+        <input type="number"/>
+        <input type="checkbox"/>
+        <input type="time"/>
+        <input type="color"/> etc -->
+
+    <!-- Placeholder attribute is used to provide a hint or example of the expected input in a form field. -->
+    <!-- <input type="text" placeholder="Enter your name"/> -->
+
+    <!-- Labels are used to provide a description or title for form controls, such as input fields, checkboxes, or radio buttons.
+    Lebel lelement represents a caption for an item in a user interface. It can be associated with a form control, such as an input element, to provide a clear and accessible description of the control's purpose. -->
+    <!-- <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" /> -->
+    <!-- id attribute is used to uniquely identify an element in the HTML document. -->
+
+    <!-- Button Element is used to create a clickable button in HTML.
+      It can be used to submit a form, trigger a JavaScript function, 
+      or perform any other action when clicked. The type attribute of 
+      the button element can be set to "submit", "reset", or "button" to specify its behavior. 
+      For example, a button with type "submit" will submit the form it is contained within when clicked. -->
+
+    <!-- <button type="submit">Submit Form</button>
+      <button type="reset">Reset Form</button>
+      <button type="button">Click Me</button> -->
+
+    <!-- button using input tag -->
+    <!-- <input type="submit">
+    <input type="submit" value="click me">
+    The value attribute is used to specify the text that appears on the button. -->
+
+    <!-- Name Attribute is used to specify the name of an input element, 
+    which is used to identify the form data when it is submitted. -->
+
+    <!-- Name of the form control. Submitted with the form as part of a name/value pair. 
+    The name attribute is used to reference form data after a form is submitted, 
+    or to reference the element in JavaScript. The id attribute is used to reference the element in JavaScript or to link a label to the element.
+    The name and id attributes can have the same value, but they serve different purposes. The name attribute is used for form submission,
+    while the id attribute is used for element identification and linking labels. -->
+    <!-- <input type="text" placeholder="enter name" id="username" name="username"/> -->
+
+    <form action="/action">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" />
+        </div>
+        <br>
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="user" name="username" placeholder="Enter your username" />
+        </div>
+        <br>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" />
+        </div>
+        <br>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" />
+        </div>
+        <br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <br>
+    <hr>
+    <br>
+    <form action="https://www.youtube.com/results">
+        <input type="text" placeholder="search in youtube" name="search_query">
+        <button>Search</button>
+    </form>
+
+    <!-- practice Question - 08
+    Create a search option that redirects its search request to google.com. -->
+    <br>
+    <hr><br>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q" placeholder="search in google">
+        <button>Search</button>
+    </form>
+
+</body>
+
+</html>
